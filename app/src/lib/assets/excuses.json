@@ -1,52 +1,40 @@
 {
   "excuses": [
     {
-      "id": "1",
-      "value": "You lost the die roll in the die roll matchup!"
+      "excuse": "You lost the die roll in the die roll matchup!"
     },
     {
-      "id": "2",
-      "value": "They got so lucky and drew the only out in their entire deck!"
+      "excuse": "They got so lucky and drew the only out in their entire deck!"
     },
     {
-      "id": "4",
-      "value": "They were playing the no skill deck with no decision trees!"
+      "excuse": "They were playing the no skill deck with no decision trees!"
     },
     {
-      "id": "5",
-      "value": "They played this stupid card and it is unbelievable that Wizards hasn't banned it! "
+      "excuse": "They played this stupid card and it is unbelievable that they hasn't banned it! "
     },
     {
-      "id": "6",
-      "value": "You got so unlucky and missed your third land for 10 turns!"
+      "excuse": "You got so unlucky and missed your third land for 10 turns!"
     },
     {
-      "id": "7",
-      "value": "You were so unlucky. They hit the 5 percenter in the 95-5 matchup!"
+      "excuse": "You were so unlucky. They hit the 5 percenter in the 95-5 matchup!"
     },
     {
-      "id": "8",
-      "value": "You were on the draw so you weren't meant to win that game anyways!"
+      "excuse": "You were on the draw so you weren't meant to win that game anyways!"
     },
     {
-      "id": "9",
-      "value": "Your hand was perfect and you just drew like ****!"
+      "excuse": "Your hand was perfect and you just drew like ****!"
     },
     {
-      "id": "10",
-      "value": "You just kept a greedy hand!"
+      "excuse": "You just kept a greedy hand!"
     },
     {
-      "id": "11",
-      "value": "You would have won if they hadn't eaten your cards when you went to use the bathroom!"
+      "excuse": "You would have won if they hadn't eaten your cards when you went to use the bathroom!"
     },
     {
-      "id": "12",
-      "value": "They're not playing a real deck anyways! Don't worry about it."
+      "excuse": "They're not playing a real deck anyways! Don't worry about it."
     },
     {
-      "id": "13",
-      "value": "If you just had one more turn you would have won!"
+      "excuse": "If you just had one more turn you would have won!"
     }
   ]
 }

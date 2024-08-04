@@ -43,7 +43,7 @@
   }
 </script>
 
-<Card size="lg" padding="xl">
+<Card size="xl" padding="xl">
   <Heading tag="h2" class="p-4">1v1 Credit Card Game</Heading>
   <P class="p-4">Enter names and begin rolling!</P>
   <Hr classHr="my-8" />
