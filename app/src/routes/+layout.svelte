@@ -2,13 +2,9 @@
 	import '../app.postcss';
 	import { page } from '$app/stores';
 	import {
+		DarkMode,
 		Footer,
-		FooterBrand,
 		FooterCopyright,
-		FooterIcon,
-		FooterLink,
-		FooterLinkGroup,
-		Img,
 		Navbar,
 		NavLi,
 		NavUl,
@@ -29,12 +25,13 @@
 			<NavLi href="https://twitter.com/akmindt">Twitter</NavLi>
 			<NavLi href="https://ko-fi.com/akmindt">Leave a Tip!</NavLi>
 		</NavUl>
+		<DarkMode />
 	</Navbar>
 </header>
 	<main class="flex justify-center items-center pt-20">
 		<slot />
 	</main>
-<footer class="sticky top-[100vh] px-4 mx-auto">
+<footer class="sticky top-[100vh] p-4 mx-auto">
 	<Footer>
 		<div class="sm:flex sm:items-center sm:justify-between">
 			<FooterCopyright href="/" by="Aaron Mindt" year={2024} />
