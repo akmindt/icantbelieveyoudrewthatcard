@@ -4,9 +4,7 @@
 
 	let numUsed = 0;
 	let excuse = '';
-	let realityCheck = false;
 	const excuses = Object.values(excusesJson)[0];
-	const numExcuses = Math.ceil(Math.random() * 10);
 
 	function getExcuse() {
 		const index = Math.floor(Math.random() * excuses.length);
@@ -14,6 +12,9 @@
 		numUsed += 1;
 	}
 </script>
+<svelte:head>
+	<title>I Can't Believe You Drew That Card!</title>
+</svelte:head>
 
 <div class="mb-6 grid gap-6 md:grid-cols-1 w-4/5">
 	<P class="p-4">Tell me what happened in your game and I will tell you exactly why you lost!</P>

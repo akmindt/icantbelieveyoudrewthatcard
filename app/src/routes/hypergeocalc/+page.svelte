@@ -22,6 +22,10 @@
   
 </script>
 
+<svelte:head>
+  <title>How lucky were they?</title>
+</svelte:head>
+
 <Card size="lg" padding="xl">
   <div>
 

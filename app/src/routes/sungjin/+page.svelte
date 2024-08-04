@@ -20,6 +20,8 @@
     player1 = document.getElementById("player1_input").value
     // @ts-ignore
     player2 = document.getElementById("player2_input").value
+    // @ts-ignore
+    max = document.getElementById("max_input").value
 
     currentPlayer = Math.floor(Math.random() * 2) + 1 == 1 ? player1 : player2
   }
@@ -43,9 +45,13 @@
   }
 </script>
 
-<Card size="xl" padding="xl">
+<svelte:head>
+  <title>Gamba</title>
+</svelte:head>
+
+<Card size="lg" padding="xl">
   <Heading tag="h2" class="p-4">1v1 Credit Card Game</Heading>
-  <P class="p-4">Enter names and begin rolling!</P>
+  <P class="p-4">Roll for <s>raid loot</s> paying the bill!</P>
   <Hr classHr="my-8" />
   {#if !player1 && !player2}
     <form>
@@ -58,14 +64,20 @@
           <Label for="player2_input" class="mb-2">Player 2</Label>
           <Input type="text" id="player2_input" placeholder="Mike" required />
         </div>
-        <Button type="submit" on:click={setPlayers}>Submit</Button>
+        <div>
+          <Label for="max_input" class="mb-2">Max Roll</Label>
+          <Input type="text" id="max_input" value="1000" required />
+        </div>
       </div>
+      <Button type="submit" on:click={setPlayers}>Submit</Button>
     </form>
   {:else if max > 1}
     <P>It is {currentPlayer}'s turn</P>
     <P>Current maximum: {max}</P>
     <Hr classHr="my-8" />
-    <Button on:click={roll}>Roll</Button>
+    <div class="grid gap-6 mb-6 md:grid-cols-2 w-1/2">
+      <Button on:click={roll}>Roll</Button>
+    </div>
   {:else}
     <P>Current maximum: {max}</P>
     <P>{currentPlayer} loses!</P>
