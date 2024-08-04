@@ -14,7 +14,6 @@
 		NavUl,
 		NavHamburger
 	} from 'flowbite-svelte';
-	import Logo from '/favicon-32x32.png';
 	$: activeUrl = $page.url.pathname;
 	
 </script>
