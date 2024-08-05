@@ -10,6 +10,11 @@
 		NavUl,
 		NavHamburger
 	} from 'flowbite-svelte';
+	import { dev } from '$app/environment';
+	import { inject } from '@vercel/analytics';
+ 
+	inject({ mode: dev ? 'development' : 'production' });
+	
 	$: activeUrl = $page.url.pathname;
 	
 </script>
