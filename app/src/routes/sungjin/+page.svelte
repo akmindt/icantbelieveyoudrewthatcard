@@ -58,11 +58,11 @@
       <div class="grid gap-6 mb-6 md:grid-cols-2">
         <div>
           <Label for="player1_input" class="mb-2">Player 1</Label>
-          <Input type="text" id="player1_input" placeholder="Sungjin" required />
+          <Input type="text" id="player1_input" value="Sungjin" required />
         </div>
         <div>
           <Label for="player2_input" class="mb-2">Player 2</Label>
-          <Input type="text" id="player2_input" placeholder="Mike" required />
+          <Input type="text" id="player2_input" value="Mike" required />
         </div>
         <div>
           <Label for="max_input" class="mb-2">Max Roll</Label>
