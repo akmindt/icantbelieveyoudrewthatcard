@@ -34,6 +34,10 @@
 }
 </script>
 
+<svelte:head>
+  <title>MtG Paint Fan Art</title>
+</svelte:head>
+
 <div class="grid gap-6 mb-6 md:grid-cols-1 w-4/5">
     <Heading tag="h2" class="p-4">Magic Community Art Gallery</Heading>
     <P class="p-4">Showcasing user submissions of the finest MS Paint art from the Magic community. Have awesome art you want to see here? Tag me with your submission on Twitter <a href="https://twitter.com/akmindt">@akmindt</a></P>
