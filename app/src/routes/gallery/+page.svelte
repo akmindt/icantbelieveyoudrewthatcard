@@ -44,7 +44,7 @@
     <Hr classHr="my-8" />
 
     <div class="grid gap-6 mb-6 md:grid-cols-3 w-full">
-      {#each gallery as {name, submittedBy, url}}
+      {#each gallery as {name, submittedBy = "", url}}
         <Card size="lg" on:click={() => {
           modalOpen = true;
           modalName = name;
@@ -53,14 +53,22 @@
           }}>
           <div>
             <Img src={url} alt="Art by {submittedBy}" />
-            <P class="p-4">{name} by <a href="https://twitter.com/{submittedBy}">{submittedBy}</a></P>
+            {#if submittedBy.indexOf('@') >= 0}
+              <P class="p-4">{name} by <a href="https://twitter.com/{submittedBy}">{submittedBy}</a></P>
+            {:else}
+              <P class="p-4">{name} by {submittedBy}</P>
+            {/if}
           </div>
         </Card>
         
       {/each}
       <Modal title={modalName} bind:open={modalOpen} autoclose outsideclose>
         <Img src={modalUrl} alt="Art by {modalSubmittedBy}" />
-        <P class="p-4">Submitted by <a href="https://twitter.com/{modalSubmittedBy}">{modalSubmittedBy}</a></P>
+        {#if modalSubmittedBy.indexOf('@') >= 0}
+          <P class="p-4">{modalName} by <a href="https://twitter.com/{modalSubmittedBy}">{modalSubmittedBy}</a></P>
+        {:else}
+          <P class="p-4">{modalName} by {modalSubmittedBy}</P>
+        {/if}
       </Modal>
     </div>
 </div>
