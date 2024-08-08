@@ -27,10 +27,10 @@
 		<NavUl {activeUrl}>
 			<NavLi href="/">Home</NavLi>
 			<NavLi href="/hypergeocalc">Hyper Geo Calc</NavLi>
+			<NavLi href="/gallery">Gallery</NavLi>
 			<NavLi href="https://twitter.com/akmindt">Twitter</NavLi>
-			<NavLi href="https://ko-fi.com/akmindt">Leave a Tip!</NavLi>
+			<NavLi><DarkMode /></NavLi>
 		</NavUl>
-		<DarkMode />
 	</Navbar>
 </header>
 	<main class="flex justify-center items-center pt-20">

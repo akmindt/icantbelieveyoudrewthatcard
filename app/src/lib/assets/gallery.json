@@ -1,0 +1,19 @@
+{
+  "gallery": [
+    {
+      "name": "Rhonas the Indomitable",
+      "submittedBy": "@sungjinmtg",
+      "url": "https://cdn.statically.io/gh/akmindt/icbydtc_cdn/master/static/assets/rhonas-the-indomitable-sungjin.png"
+    },
+    {
+      "name": "Artificer's Assistant",
+      "submittedBy": "@_pg8_",
+      "url": "https://cdn.statically.io/gh/akmindt/icbydtc_cdn/master/static/assets/artificers-assistant-pg8.jpg"
+    },
+    {
+      "name": "Grenzo, Dungeon Warden",
+      "submittedBy": "@AlexShockency",
+      "url": "https://cdn.statically.io/gh/akmindt/icbydtc_cdn/master/static/assets/grenzo-dungeon-warden-alexshockency.png"
+    }
+  ]
+}

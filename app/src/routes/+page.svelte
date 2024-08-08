@@ -1,5 +1,5 @@
 <script>
-	import { Button, Card, Heading, Hr, P, Textarea } from 'flowbite-svelte';
+	import { Button, Hr, P, Textarea } from 'flowbite-svelte';
 	import excusesJson from '$lib/assets/excuses.json';
 
 	let numUsed = 0;

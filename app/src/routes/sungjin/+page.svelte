@@ -22,6 +22,7 @@
     player2 = document.getElementById("player2_input").value
     // @ts-ignore
     max = document.getElementById("max_input").value
+    max = max > 1 ? max : 1000
 
     currentPlayer = Math.floor(Math.random() * 2) + 1 == 1 ? player1 : player2
   }
